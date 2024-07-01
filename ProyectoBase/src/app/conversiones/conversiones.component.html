@@ -1,0 +1,25 @@
+<div class="mt-3"></div>
+<div class="container border-primary">
+  <div class="card border-primary">
+    <div class="card-header">
+      <h1 class="card-title text-center text-info">
+        {{titulo}}
+       </h1>
+    </div>
+    <div class="card-body text-center text-primary">
+        <form>
+            <div class="mb-3">
+                <label for="txtN1" class="form-label">Ingresa la temperatura en °C</label>
+                <input type="number" class="form-control" id="txtN1" name="numero1" [(ngModel)]="grados" step="0.1">
+            </div>
+        
+            <button type="submit" class="btn btn-outline-danger" (click)="farenheit()">°Farenheit</button>
+            <button type="submit" class="btn btn-outline-info" (click)="kelvin()">°Kelvin</button>
+        
+        </form> 
+        <label clas="form-label">El resultado de la conversión es {{ conversion }}</label> 
+    </div>
+  </div>
+</div>
+  
+
